@@ -7,7 +7,8 @@
 
 import React from 'react'; //리액트 컴포넌트를 만들때는 이 코드를 꼭 넣어줘야 한다.
 import type { Node } from 'react';
-import Greeting from './component/Greeting';
+{/* import Greeting from './component/Greeting' */ }
+import Box from './component/Box';
 
 import {
   SafeAreaView,
@@ -19,68 +20,16 @@ import {
   View,
 } from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-/* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
- * LTI update could not be added via codemod */
-const Section = ({ children, title }): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-};
-
 const App = () => {
   const name = 'JSX';
   return (
     <SafeAreaView>
-      <Greeting name={name} />
+      {/* JSX에서 주석을 작성하는 방법 {/*와 *} 사이에 주석을 넣는 것 */}
+      {/*<Greeting name={name} />*/}
+      <Box />
     </SafeAreaView>
   );
 };
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default App;
