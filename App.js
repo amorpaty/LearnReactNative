@@ -26,7 +26,7 @@ const App = () => {
     <SafeAreaView>
       {/* JSX에서 주석을 작성하는 방법 {/*와 *} 사이에 주석을 넣는 것 */}
       {/*<Greeting name={name} />*/}
-      <Box />
+      <Box rounded={true} size="large" color="gold" />
     </SafeAreaView>
   );
 };
