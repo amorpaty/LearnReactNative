@@ -7,6 +7,8 @@
 
 import React from 'react'; //리액트 컴포넌트를 만들때는 이 코드를 꼭 넣어줘야 한다.
 import type { Node } from 'react';
+import Greeting from './component/Greeting';
+
 import {
   SafeAreaView,
   ScrollView,
@@ -54,6 +56,7 @@ const Section = ({ children, title }): Node => {
 };
 
 const App = () => {
+  /*
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -65,6 +68,12 @@ const App = () => {
       <View>
         <Text>Hello React</Text>
       </View>
+    </SafeAreaView>
+  );
+  */
+  return (
+    <SafeAreaView>
+      <Greeting />
     </SafeAreaView>
   );
 };
