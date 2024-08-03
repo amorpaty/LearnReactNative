@@ -56,24 +56,10 @@ const Section = ({ children, title }): Node => {
 };
 
 const App = () => {
-  /*
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <View>
-        <Text>Hello React</Text>
-      </View>
-    </SafeAreaView>
-  );
-  */
+  const name = 'JSX';
   return (
     <SafeAreaView>
-      <Greeting />
+      <Greeting name={name} />
     </SafeAreaView>
   );
 };
