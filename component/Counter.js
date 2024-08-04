@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
 function Counter({ count, onIncrease, onDecrease }) {
     return (
