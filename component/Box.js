@@ -1,13 +1,14 @@
 import React from "react";
 import { View, StyleSheet } from 'react-native';
 
-function Box(props) {
+{/* Props 객체 구조 분해 할당 */ }
+function Box({ rounded, size, color }) {
     return (<View style={[
         styles.box,
-        props.rounded && styles.rounded,
-        sizes[props.size],
+        rounded && styles.rounded,
+        sizes[size],
         {
-            backgroundColor: props.color,
+            backgroundColor: color,
         },
     ]}
     />
